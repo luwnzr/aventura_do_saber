@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura do Saber - A Sua Aventura de Aprender!</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/mascote.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>Aventura do Saber</h1>
+        </div>
+        
+        <nav class="navegacao">
+            <a href="index.html" class="[Classe Ativa Aqui]">Início</a>
+            <a href="cursos.html" class="[Classe Ativa Aqui]">Cursos</a>
+            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a> 
+            <a href="login.html" class="botao-login [Classe Ativa Aqui]">Login</a>
+            <a href="cadastro.html" class="botao-cadastro [Classe Ativa Aqui]">Cadastro</a>
+        </nav>
+        
+        <div class="menu-mobile-icon">
+            &#9776; </div>
+    </header>
+
+    <main>
+        <section class="hero-section hero-com-banner">
+        <div class="hero-conteudo">
+            <h2>Aprender é uma Aventura Incrível!</h2>
+            <p>Junte-se ao Aventura do Saber e explore Matemática, Artes, Ciências e muito mais de um jeito super divertido!</p>
+            <a href="cursos.html" class="cta-botao">🚀 Começar a Aprender Agora!</a>
+        </div>
+
+        <!--
+        <div class="hero-decoracao">
+            <img src="img/mascote1.png" alt="Mascote Gênio do Senaczinho" class="mascote-hero">
+        </div>
+        -->
+
+    </section>
+
+        <section class="destaques">
+            <h3>Por Que o Aventura do Saber é o Máximo?</h3>
+            <div class="cards-container">
+                <div class="card-destaque">
+                    <span class="icone-destaque">📚</span>
+                    <h4>Conteúdo de 7 a 12 anos</h4>
+                    <p>Materiais introdutórios de todas as matérias.</p>
+                </div>
+                <div class="card-destaque">
+                    <span class="icone-destaque">🎮</span>
+                    <h4>Aprendizagem Divertida</h4>
+                    <p>Lições em formato de jogos e desafios.</p>
+                </div>
+                <div class="card-destaque">
+                    <span class="icone-destaque">🛡️</span>
+                    <h4>Ambiente Seguro</h4>
+                    <p>Focado apenas no conteúdo educacional.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Aventura do Saber - Todos os Direitos Reservados. | Educação Infantil e Fundamental I.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-mobile-icon').addEventListener('click', () => {
+            document.querySelector('.navegacao').classList.toggle('aberto');
+        });
+    </script>
+
+</body>
+</html>

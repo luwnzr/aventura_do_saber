@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Aventura do Saber - Nossas Matérias</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/mascote.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>Aventura do Saber</h1>
+        </div>
+        
+       <nav class="navegacao">
+            <a href="index.html" class="[Classe Ativa Aqui]">Início</a>
+            <a href="cursos.html" class="[Classe Ativa Aqui]">Cursos</a>
+            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a> 
+            <a href="login.html" class="botao-login [Classe Ativa Aqui]">Login</a>
+            <a href="cadastro.html" class="botao-cadastro [Classe Ativa Aqui]">Cadastro</a>
+        </nav>
+        
+        <div class="menu-mobile-icon">
+            &#9776; 
+        </div>
+    </header>
+
+    <main class="container-principal">
+        <section class="secao-cursos">
+            <h2 class="titulo-pagina">Escolha Sua Próxima Aventura de Aprendizado!</h2>
+            <p class="subtitulo-pagina">Clique em uma matéria para começar a explorar o conteúdo introdutório.</p>
+
+            <div class="grid-cursos">
+                
+                <div class="card-curso matematica">
+                    <div class="icone-curso">🔢</div>
+                    <h3>Matemática</h3>
+                    <p>Contas, formas e lógica para desvendar o mundo.</p>
+                    <a href="conteudo-matematica.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+
+                <div class="card-curso portugues">
+                    <div class="icone-curso">📚</div>
+                    <h3>Português</h3>
+                    <p>A aventura de ler, escrever e se comunicar bem!</p>
+                    <a href="conteudo-portugues.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+
+                <div class="card-curso artes">
+                    <div class="icone-curso">🖌️</div>
+                    <h3>Artes</h3>
+                    <p>Solte a imaginação e crie obras de arte incríveis.</p>
+                    <a href="conteudo-artes.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+
+                <div class="card-curso ciencias">
+                    <div class="icone-curso">🔬</div>
+                    <h3>Ciências</h3>
+                    <p>Desvendando os segredos da natureza, animais e do corpo humano.</p>
+                    <a href="conteudo-ciencias.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+
+                <div class="card-curso historia">
+                    <div class="icone-curso">🏰</div>
+                    <h3>História</h3>
+                    <p>Viagem no tempo: conheça heróis e grandes momentos!</p>
+                    <a href="conteudo-historia.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+
+                <div class="card-curso geografia">
+                    <div class="icone-curso">🌎</div>
+                    <h3>Geografia</h3>
+                    <p>Explore mapas, países, climas e paisagens!</p>
+                    <a href="conteudo-geografia.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+
+                <div class="card-curso informatica">
+                    <div class="icone-curso">🤖</div>
+                    <h3>Informática</h3>
+                    <p>Aprendendo a usar a tecnologia de forma divertida e segura.</p>
+                    <a href="conteudo-informatica.html" class="link-curso">Ver Conteúdo</a>
+                </div>
+                <div class="card-curso programacao">
+                    <div class="icone-curso">💻</div>
+                    <h3>Programação/Lógica</h3>
+                    <p>Comandos simples, lógica de programação e robótica.</p>
+                    <a href="#" class="link-curso">Em Breve</a>
+                </div>
+                
+                <div class="card-curso meio-ambiente">
+                    <div class="icone-curso">♻️</div>
+                    <h3>Meio Ambiente</h3>
+                    <p>Reciclagem, Sustentabilidade, Água e o Planeta.</p>
+                    <a href="#" class="link-curso">Em Breve</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Aventura do Saber - Todos os Direitos Reservados. | Educação Infantil e Fundamental I.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-mobile-icon').addEventListener('click', () => {
+            document.querySelector('.navegacao').classList.toggle('aberto');
+        });
+    </script>
+
+</body>
+</html>

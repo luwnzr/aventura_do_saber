@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Aventura do Saber</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/mascote.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>Aventura do Saber</h1>
+        </div>
+        
+        <nav class="navegacao">
+            <a href="index.html" class="[Classe Ativa Aqui]">Início</a>
+            <a href="cursos.html" class="[Classe Ativa Aqui]">Cursos</a>
+            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a> 
+            <a href="login.html" class="botao-login [Classe Ativa Aqui]">Login</a>
+            <a href="cadastro.html" class="botao-cadastro [Classe Ativa Aqui]">Cadastro</a>
+        </nav>
+        
+        <div class="menu-mobile-icon">&#9776;</div>
+    </header>
+
+    <main class="container-principal form-page">
+        <section class="form-container login-container">
+            <h2 class="form-titulo">Faça Seu Login</h2>
+            <p class="form-subtitulo">Acesse sua área e continue a aventura!</p>
+            
+            <form action="#" method="POST" class="form-estilo">
+                
+                <div class="campo">
+                    <label for="email">E-mail (Responsável):</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Sua senha secreta" required>
+                </div>
+                
+                <button type="submit" class="botao-submit">Entrar na Aventura</button>
+                
+                <p class="link-secundario">
+                    Esqueceu a senha? <a href="#">Clique aqui</a>
+                </p>
+                <p class="link-secundario">
+                    Ainda não tem conta? <a href="cadastro.html">Cadastre-se!</a>
+                </p>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Aventura do Saber - Todos os Direitos Reservados. | Educação Infantil e Fundamental I.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-mobile-icon').addEventListener('click', () => {
+            document.querySelector('.navegacao').classList.toggle('aberto');
+        });
+    </script>
+
+</body>
+</html>
