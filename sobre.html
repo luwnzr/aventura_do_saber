@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="cabecalho">
         <div class="logo">
             <h1>Aventura do Saber</h1>
         </div>
-        
+
         <nav class="navegacao">
             <a href="index.html" class="[Classe Ativa Aqui]">Início</a>
             <a href="cursos.html" class="[Classe Ativa Aqui]">Cursos</a>
-            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a> 
+            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a>
             <a href="login.html" class="botao-login [Classe Ativa Aqui]">Login</a>
             <a href="cadastro.html" class="botao-cadastro [Classe Ativa Aqui]">Cadastro</a>
         </nav>
-        
+
         <div class="menu-mobile-icon">&#9776;</div>
     </header>
 
     <main class="container-principal">
         <h2 class="titulo-pagina sobre-ajuda-titulo">Informações e Ajuda</h2>
-        
+
         <section class="quem-somos">
             <h3>⭐ Quem Somos Nós?</h3>
             <div class="conteudo-sobre">
-                <p>O Aventura do Saber nasceu com a missão de transformar o aprendizado em uma aventura divertida e segura para crianças de 7 a 12 anos na Educação Infantil e Fundamental I.</p>
-                <p>Acreditamos que a curiosidade é o motor do conhecimento. Por isso, oferecemos conteúdo introdutório de alta qualidade em matérias essenciais como Matemática, Português, Ciências, Artes, Ciências, História, Geografia, Informatica, Programação/Lógica, Meio Ambiente tudo com uma abordagem lúdica e focada no desenvolvimento da criança.</p>
-                
+                <p>O Aventura do Saber nasceu com a missão de transformar o aprendizado em uma aventura divertida e
+                    segura para crianças de 7 a 12 anos na Educação Infantil e Fundamental I.</p>
+                <p>Acreditamos que a curiosidade é o motor do conhecimento. Por isso, oferecemos conteúdo introdutório
+                    de alta qualidade em matérias essenciais como Matemática, Português, Artes, Ciências, História,
+                    Geografia, Informatica, Programação/Lógica, Meio Ambiente tudo com uma abordagem lúdica e focada no
+                    desenvolvimento da criança.</p>
+
                 <div class="valores">
                     <h4>Nossos Valores:</h4>
                     <ul>
-                        <li><span class="icone-valor">🤝</span> Segurança: Ambiente livre de distrações e totalmente seguro.</li>
-                        <li><span class="icone-valor">💡</span> Curiosidade: Estimular a vontade de aprender sempre mais.</li>
-                        <li><span class="icone-valor">🧩</span> Foco no Conteúdo: Lições claras e objetivas, feitas para crianças.</li>
+                        <li><span class="icone-valor">🤝</span> Segurança: Ambiente livre de distrações e totalmente
+                            seguro.</li>
+                        <li><span class="icone-valor">💡</span> Curiosidade: Estimular a vontade de aprender sempre
+                            mais.</li>
+                        <li><span class="icone-valor">🧩</span> Foco no Conteúdo: Lições claras e objetivas, feitas para
+                            crianças.</li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +65,8 @@
                         <span class="icone-expansao">+</span>
                     </button>
                     <div class="resposta-painel">
-                        <p>Basta clicar no botão Cadastro no canto superior direito. Você precisará de um e-mail válido para criar a conta de responsável e, em seguida, cadastrar o perfil do aluno.</p>
+                        <p>Basta clicar no botão Cadastro no canto superior direito. Você precisará de um e-mail válido
+                            para criar a conta de responsável e, em seguida, cadastrar o perfil do aluno.</p>
                     </div>
                 </div>
 
@@ -66,21 +76,24 @@
                         <span class="icone-expansao">+</span>
                     </button>
                     <div class="resposta-painel">
-                        <p>Sim! Todo o nosso material é desenvolvido por educadores com foco em conteúdos introdutórios e didática adaptada para crianças de 7 a 12 anos. Usamos cores, mascotes e linguagem simples.</p>
+                        <p>Sim! Todo o nosso material é desenvolvido por educadores com foco em conteúdos introdutórios
+                            e didática adaptada para crianças de 7 a 12 anos. Usamos cores, mascotes e linguagem
+                            simples.</p>
                     </div>
                 </div>
-                
+
                 <div class="pergunta-item">
                     <button class="pergunta-botao">
                         Existe algum custo?
                         <span class="icone-expansao">+</span>
                     </button>
                     <div class="resposta-painel">
-                        <p>O acesso ao conteúdo introdutório é totalmente gratuito. Oferecemos também, futuramente, módulos premium opcionais com atividades extras e acompanhamento personalizado.</p>
+                        <p>O acesso ao conteúdo introdutório é totalmente gratuito. Oferecemos também, futuramente,
+                            módulos premium opcionais com atividades extras e acompanhamento personalizado.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="contato-apoio">
                 <h4>Ainda com dúvidas?</h4>
                 <p>Entre em contato conosco por e-mail:</p>
@@ -103,10 +116,10 @@
         const botoesPergunta = document.querySelectorAll('.pergunta-botao');
 
         botoesPergunta.forEach(botao => {
-            botao.addEventListener('click', function() {
+            botao.addEventListener('click', function () {
                 const painel = this.nextElementSibling;
                 const icone = this.querySelector('.icone-expansao');
-                
+
                 // Fecha todos os outros painéis abertos
                 botoesPergunta.forEach(outroBotao => {
                     if (outroBotao !== this && outroBotao.classList.contains('ativo')) {
@@ -130,4 +143,5 @@
     </script>
 
 </body>
+
 </html>

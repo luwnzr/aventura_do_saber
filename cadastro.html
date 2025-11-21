@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="cabecalho">
         <div class="logo">
             <h1>Aventura do Saber</h1>
         </div>
-        
+
         <nav class="navegacao">
             <a href="index.html" class="[Classe Ativa Aqui]">Início</a>
             <a href="cursos.html" class="[Classe Ativa Aqui]">Cursos</a>
-            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a> 
+            <a href="sobre.html" class="[Classe Ativa Aqui]">Sobre</a>
             <a href="login.html" class="botao-login [Classe Ativa Aqui]">Login</a>
             <a href="cadastro.html" class="botao-cadastro [Classe Ativa Aqui]">Cadastro</a>
         </nav>
-        
+
         <div class="menu-mobile-icon">&#9776;</div>
     </header>
 
@@ -31,36 +33,43 @@
         <section class="form-container cadastro-container">
             <h2 class="form-titulo">Cadastre-se e Comece a Aprender!</h2>
             <p class="form-subtitulo">Primeiro, precisamos dos dados do adulto responsável.</p>
-            
-            <form action="#" method="POST" class="form-estilo">
-                
+
+            <form action="cursos.html" method="GET" class="form-estilo">
+
                 <div class="campo">
                     <label for="nome_responsavel">Nome Completo (Responsável):</label>
-                    <input type="text" id="nome_responsavel" name="nome_responsavel" placeholder="Ex: Maria da Silva" required>
+                    <input type="text" id="nome_responsavel" name="nome_responsavel" placeholder="Ex: Maria da Silva"
+                        required>
                 </div>
 
                 <div class="campo">
                     <label for="email_cadastro">E-mail (Responsável):</label>
-                    <input type="email" id="email_cadastro" name="email_cadastro" placeholder="seu.email@exemplo.com" required>
-                </div>
-                
-                <div class="campo">
-                    <label for="senha_cadastro">Crie uma Senha Segura:</label>
-                    <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Mínimo 8 caracteres" required>
-                </div>
-                
-                <div class="campo checkbox-campo">
-                    <input type="checkbox" id="termos" name="termos" required>
-                    <label for="termos">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.</label>
+                    <input type="email" id="email_cadastro" name="email_cadastro" placeholder="seu.email@exemplo.com"
+                        required>
                 </div>
 
-                <button type="submit" class="botao-submit cadastro-submit">Criar Conta</button>
-                
+                <div class="campo">
+                    <label for="senha_cadastro">Crie uma Senha Segura:</label>
+                    <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Mínimo 8 caracteres"
+                        required>
+                </div>
+
+                <div class="campo checkbox-campo">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de
+                            Privacidade</a>.</label>
+                </div>
+
+                <a href="cursos.html" class="botao-submit cadastro-submit" rel="noopener noreferrer"
+                    style="display: block; text-align: center;">
+                    Criar Conta
+                </a>
+
                 <p class="link-secundario">
                     Já sou cadastrado! <a href="login.html">Fazer Login</a>
                 </p>
             </form>
-            
+
         </section>
     </main>
 
@@ -75,4 +84,5 @@
     </script>
 
 </body>
+
 </html>

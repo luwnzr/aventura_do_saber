@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha | Aventura do Saber</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>Aventura do Saber</h1>
+        </div>
+
+        <nav class="navegacao">
+            <a href="index.html">Início</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="login.html" class="botao-login ativo">Login</a>
+            <a href="cadastro.html" class="botao-cadastro">Cadastro</a>
+        </nav>
+
+        <div class="menu-mobile-icon">&#9776;</div>
+    </header>
+
+    <main class="container-principal form-page">
+        <section class="form-container login-container">
+            <h2 class="form-titulo">🔑 Recuperar Senha</h2>
+            <p class="form-subtitulo">Digite seu e-mail de cadastro. Enviaremos um link para redefinição.</p>
+
+            <form action="#" method="POST" class="form-estilo">
+
+                <div class="campo">
+                    <label for="email_recuperacao">E-mail (Responsável):</label>
+                    <input type="email" id="email_recuperacao" name="email_recuperacao"
+                        placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <button type="button" id="btn-enviar-link" class="botao-submit"
+                    style="background-color: var(--laranja-vibrante);">
+                    Enviar Link de Recuperação
+                </button>
+
+                <p class="link-secundario">
+                    Lembrou a senha? <a href="login.html">Voltar para o Login</a>
+                </p>
+                <p class="link-secundario">
+                    Não tem conta? <a href="cadastro.html">Criar Cadastro</a>
+                </p>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Aventura do Saber - Todos os Direitos Reservados. | Educação Infantil e Fundamental I.</p>
+    </footer>
+
+    <script>
+        // Script para o menu móvel
+        document.querySelector('.menu-mobile-icon').addEventListener('click', () => {
+            document.querySelector('.navegacao').classList.toggle('aberto');
+        });
+
+        // Script para o Alerta de E-mail Enviado
+        document.getElementById('btn-enviar-link').addEventListener('click', function () {
+            // Verifica se o campo de e-mail está preenchido (validação básica de front-end)
+            const emailInput = document.getElementById('email_recuperacao');
+
+            if (emailInput.value.includes('@') && emailInput.value.includes('.')) {
+                // Dispara o alerta apenas se o e-mail parecer válido
+                alert('✉️ Sucesso! Um link de redefinição de senha foi enviado para o seu e-mail.');
+            } else {
+                // Alerta se o campo estiver vazio ou inválido
+                alert('Atenção: Por favor, digite um e-mail válido no campo.');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="cabecalho">
         <div class="logo">
             <h1>Aventura do Saber</h1>
         </div>
-        
+
         <nav class="navegacao">
             <a href="index.html">Início</a>
             <a href="cursos.html" class="ativo">Cursos</a>
@@ -23,228 +25,597 @@
             <a href="login.html" class="botao-login">Login</a>
             <a href="cadastro.html" class="botao-cadastro">Cadastro</a>
         </nav>
-        
+
         <div class="menu-mobile-icon">&#9776;</div>
     </header>
 
     <main class="container-principal conteudo-page-historia">
-        
+
         <section class="cabecalho-curso historia-header sem-progresso">
             <a href="cursos.html" class="voltar-cursos">← Voltar para a Lista de Cursos</a>
             <h2 class="titulo-curso">🕰️ História: Viagem ao Passado</h2>
-            <p class="resumo-curso">Escolha um módulo para entender como o tempo passa e como as pessoas viveram antes de nós!</p>
+            <p class="resumo-curso">Aqui você vai revisar os principais temas de História de forma leve e divertida.
+                Vamos embarcar nessa viagem pelo tempo?</p>
         </section>
-        
+
         <div class="layout-conteudo">
-            
+
             <aside class="menu-licoes historia-menu">
                 <h3>📜 Módulos de História</h3>
                 <ul class="modulos-navegacao-fixa">
                     <li class="modulo-fixo atual">
-                        <a href="#tempo-conteudo" data-target="tempo-conteudo">⏳ Módulo 1: O Que é o Tempo?</a>
+                        <a href="#descobrimento-brasil" data-target="descobrimento-brasil">🗺️ Módulo 1: O Descobrimento
+                            do Brasil</a>
                     </li>
                     <li class="modulo-fixo">
-                        <a href="#eu-conteudo" data-target="eu-conteudo">👶 Módulo 2: Minha História</a>
+                        <a href="#era-imperio" data-target="era-imperio">👑 Módulo 2: A Era do Império</a>
                     </li>
                     <li class="modulo-fixo">
-                        <a href="#sociedades-conteudo" data-target="sociedades-conteudo">👑 Módulo 3: Sociedades Antigas</a>
+                        <a href="#republica-diasatuais" data-target="republica-diasatuais">🏛️ Módulo 3: A República e
+                            os Dias Atuais</a>
                     </li>
                     <li class="modulo-fixo">
-                        <a href="#local-conteudo" data-target="local-conteudo">🏘️ Módulo 4: História do Meu Lugar</a>
+                        <a href="#brasil-contemporaneo" data-target="brasil-contemporaneo">🌎 Módulo 4: Brasil
+                            Contemporâneo e Sociedade Atual</a>
                     </li>
                 </ul>
             </aside>
-            
+
             <section class="secao-licao">
-                
-                <div id="tempo-conteudo" class="conteudo-operacao-bloco visivel">
+
+                <div id="descobrimento-brasil" class="conteudo-operacao-bloco visivel">
                     <header class="cabecalho-licao historia-header-interno">
-                        <h1>Módulo 1: Contando o Passado, Presente e Futuro</h1>
-                        <p class="objetivo-licao">🎯 Objetivo: Aprender a medir o tempo e a diferença entre antes, agora e depois.</p>
+                        <h1>Módulo 1: O Descobrimento do Brasil</h1>
+                        <p class="objetivo-licao">🎯 Objetivo: Compreender como aconteceu a chegada de Pedro Álvares
+                            Cabral ao Brasil, reconhecendo que o território já era habitado por diversos povos indígenas
+                            muito antes de 1500.</p>
                     </header>
-                    
-                    <div class="bloco-texto conteudo-integrado"> 
-                        
-                        <h2>O Tempo e o Calendário</h2>
-                        <p>História é a ciência que estuda o tempo! Usamos calendários para organizar os dias, semanas, meses e anos.</p>
-                        
-                        <h3>Exemplo 1: Linha do Tempo</h3>
-                        <p>Podemos colocar eventos em ordem: o que aconteceu primeiro (passado), o que acontece hoje (presente) e o que vai acontecer (futuro).</p>
-                        
-                        <div class="exemplo-visual">
-                            <p class="exemplo-titulo">Ordem do Tempo:</p>
-                            <p>Ontem é o <span class="resultado-historia">Passado</span>; Hoje é o <span class="resultado-historia">Presente</span>.</p>
-                        </div>
 
-                        <h3>Exemplo 2: Medindo o Tempo</h3>
-                        <p>O tempo pode ser medido em segundos, minutos e horas (relógio) ou em dias, meses e anos (calendário).</p>
-                        
-                        <div class="exemplo-visual">
-                            <p>Um ano tem <span class="resultado-historia">12 meses</span>.</p>
-                        </div>
-                        
-                        <h3>Exemplo 3: Décadas e Séculos</h3>
-                        <p>Na História, o tempo é medido em grandes blocos. Uma década tem 10 anos e um século tem 100 anos.</p>
-                        
-                        <div class="exemplo-visual">
-                            <p>100 anos formam um <span class="resultado-historia">Século</span>.</p>
-                        </div>
-
-                        <h2 class="titulo-video-secundario integrado">🎥 Assista: A Invenção do Calendário:</h2>
-
-                        <div class="bloco-redirecionamento-video">
-                            <a 
-                                href="https://www.youtube.com/watch?v=pFTgWgb5wiM&t=59s" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                class="botao-video-youtube"
-                            >
-                                ▶️ Assista à Explicação no YouTube
-                            </a>
-                        </div>
-
-                        <h3>Hora de Praticar! 🎮</h3>
-                        <p>Organize eventos históricos na linha do tempo!</p>
-                        <a href="#" class="botao-acao-licao">Jogo da Linha do Tempo</a>
-
-                    </div>
-                </div>
-                
-                <div id="eu-conteudo" class="conteudo-operacao-bloco oculto">
-                    <header class="cabecalho-licao historia-header-interno">
-                        <h1>Módulo 2: Quem Sou Eu?</h1>
-                        <p class="objetivo-licao">🎯 Objetivo: Entender a própria história através de documentos e memórias.</p>
-                    </header>
-                    
                     <div class="bloco-texto conteudo-integrado">
-                        <h2>Sua História Importa!</h2>
-                        <p>Sua vida, desde o seu nascimento, é a sua própria história. Documentos e fotografias são "fontes históricas" da sua vida.</p>
-                        
-                        <h3>Exemplo 1: Documentos</h3>
-                        <p>A Certidão de Nascimento é o primeiro documento que prova quem você é e onde nasceu.</p>
+
+                        <h2>Bem-vindos à Nossa Viagem pela História do Brasil!</h2>
+                        <p>Hoje vamos embarcar juntos em uma aventura incrível pelo passado do nosso país. Vamos
+                            descobrir como era o Brasil antes da chegada dos portugueses, quem vivia aqui, como eram
+                            seus costumes e o que aconteceu quando Pedro Álvares Cabral e sua frota chegaram em 1500.
+                        </p>
+
+                        <img src="img/descobrimento-brasil.1.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <h3> A Chegada de Pedro Álvares Cabral</h3>
+                        <p>Em 1500, Pedro Álvares Cabral chegou ao Brasil. Mas o território já era habitado por diversos
+                            povos indígenas! Em 22 de abril de 1500, a frota portuguesa comandada por Pedro Álvares
+                            Cabral chegou às terras que hoje conhecemos como Brasil. Mas, na verdade, o território já
+                            era habitado há milhares de anos por diferentes povos indígenas, com culturas, línguas e
+                            tradições próprias. Cabral chamou o local de “Ilha de Vera Cruz”, achando que havia
+                            encontrado uma ilha, e mais tarde o nome foi mudado para Brasil, por causa do pau-brasil,
+                            árvore muito valiosa na época.</p>
+                        <img src="img/descobrimento-brasil.2.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <h2>Os Povos Indígenas Antes da Chegada dos Portugueses</h2>
+                        <p>Antes de 1500, milhares de povos indígenas viviam no território brasileiro. Eles tinham
+                            línguas, costumes e modos de vida próprios, baseados na caça, pesca, agricultura e trocas.
+                            Grupos como Tupinambás, Tupiniquins, Guaranis e Jês ocupavam diferentes regiões, em harmonia
+                            com a natureza.</p>
+
+                        <img src="img/descobrimento-brasil.3.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
                         <div class="exemplo-visual">
-                            <p>Sua primeira fonte histórica é a <span class="resultado-historia">Certidão de Nascimento</span>.</p>
+                            <p class="exemplo-titulo">Como Viviam os Povos Indígenas:</p>
+                            <p>Os povos indígenas tinham uma relação muito especial com a natureza <span
+                                    class="resultado-historia">eles plantavam, pescavam, caçavam e usavam os recursos da
+                                    floresta com respeito e equilíbrio. Cada grupo tinha suas próprias histórias,
+                                    pinturas, músicas e jeitos de viver.</span><span class="resultado-historia"></span>
+                            </p>
                         </div>
 
-                        <h3>Exemplo 2: Fontes Orais</h3>
-                        <p>Histórias contadas por seus avós ou pais também são fontes importantes para entender o passado da sua família.</p>
+                        <h3>A Chegada da Frota de Pedro Álvares Cabral</h3>
+                        <p>A frota portuguesa partiu de Lisboa com 13 embarcações e mais de mil homens, com o objetivo
+                            de chegar às Índias. Mas os ventos desviaram o caminho, e em 22 de abril de 1500, eles
+                            avistaram o litoral do atual estado da Bahia. O local ficou conhecido como a “Terra de Vera
+                            Cruz”.</p>
+
+                        <img src="img/descobrimento-brasil.4.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
                         <div class="exemplo-visual">
-                            <p>Histórias contadas por voz são <span class="resultado-historia">Fontes Orais</span>.</p>
-                        </div>
-                        
-                        <h3>Exemplo 3: Mudanças</h3>
-                        <p>Sua história é feita de mudanças: você era bebê, depois aprendeu a andar, e agora estuda. História é sobre mudar!</p>
-                        <div class="exemplo-visual">
-                            <p>A História da sua vida mostra sua <span class="resultado-historia">Evolução e Mudança</span>.</p>
+                            <p class="exemplo-titulo">Ilha de Vera Cruz:</p>
+                            <p>Quando Cabral avistou o Monte Pascoal em 22 de abril de 1500, ele e sua tripulação
+                                batizaram a terra de Ilha de Vera Cruz, posteriormente, o nome foi mudado para Terra de
+                                Vera Cruz e, depois, <span class="resultado-historia">Terra de Santa Cruz</span>.</p>
                         </div>
 
-                        <h2 class="titulo-video-secundario integrado">🎥 Vídeo: Fazendo Sua Árvore Genealógica:</h2>
+                        <h3>A Primeira Missa no Brasil</h3>
+                        <p>Poucos dias após o desembarque, em 26 de abril de 1500, foi celebrada a primeira missa em
+                            solo brasileiro, na praia da Coroa Vermelha (Bahia). O frei Henrique de Coimbra comandou a
+                            cerimônia, que simbolizou o início da presença portuguesa e católica no território.</p>
+
+                        <img src="img/descobrimento-brasil.5.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <div class="exemplo-visual">
+                            <p class="exemplo-titulo">Domingo de Ramos:</p>
+                            <p>O dia 26 de abril de 1500, data da missa, era o Domingo de Ramos daquele ano, que marca o
+                                início da Semana Santa: <span class="resultado-historia">Este período tem grande
+                                    simbolismo para a fé católica. A missa foi um ato de posse religiosa e um evento que
+                                    marcou o início da evangelização e da presença da Igreja Católica no novo
+                                    território</span>.</p>
+                        </div>
+
+                        <h2 class="titulo-video-secundario integrado">🎥 Assista: O Descobrimento do Brasil:</h2>
 
                         <div class="bloco-redirecionamento-video">
-                            <a 
-                                href="https://www.youtube.com/watch?v=pFTgWgb5wiM&t=59s" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                class="botao-video-youtube"
-                            >
+                            <a href="https://www.youtube.com/watch?v=tva1j7NYR2c" target="_blank"
+                                rel="noopener noreferrer" class="botao-video-youtube">
                                 ▶️ Assista à Explicação no YouTube
                             </a>
                         </div>
-
-                        <a href="#" class="botao-acao-licao">Criar Minha Linha do Tempo</a>
+                        <a data-target="era-imperio" class="botao-acao-licao proximo-modulo btn-proximo-modulo">Próximo
+                            Módulo (1 de 4) →</a>
                     </div>
                 </div>
 
-                <div id="sociedades-conteudo" class="conteudo-operacao-bloco oculto">
+                <div id="era-imperio" class="conteudo-operacao-bloco oculto">
                     <header class="cabecalho-licao historia-header-interno">
-                        <h1>Módulo 3: Os Egípcios e as Pirâmides</h1>
-                        <p class="objetivo-licao">🎯 Objetivo: Conhecer a vida no Antigo Egito e a importância dos faraós.</p>
+                        <h1>Módulo 2: A Era do Império</h1>
+                        <p class="objetivo-licao">🎯 Objetivo: Compreender as principais características políticas,
+                            sociais e econômicas da Era do Império (1822–1889) e reconhecer seu papel na formação do
+                            Brasil moderno.</p>
                     </header>
-                    
+
                     <div class="bloco-texto conteudo-integrado">
-                        <h2>O Antigo Egito</h2>
-                        <p>Os egípcios viveram há milhares de anos e construíram monumentos incríveis, como as Pirâmides. Eles eram governados por Faraós.</p>
-                        
-                        <h3>Exemplo 1: O Faraó</h3>
-                        <p>O Faraó era o rei, considerado um deus na Terra. Ele governava todo o Egito.</p>
+
+                        <h2>Seja Bem-Vindo(a) à História do Brasil Imperial! 👑</h2>
+                        <p>Hoje, vamos mergulhar em um dos períodos mais importantes da formação do nosso país: a Era do
+                            Império, que vai de 1822 a 1889.</p>
+
+                        <img src="img/era-imperio.1.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <h2>O Brasil Monárquico e Suas Mudanças</h2>
+                        <p>A Era do Império foi o período da história do Brasil que vai de 1822 a 1889, começando com a
+                            Independência do Brasil e terminando com a Proclamação da República. Foi um tempo em que o
+                            país teve governo monárquico, ou seja, comandado por um imperador — Dom Pedro I e, depois,
+                            Dom Pedro II..</p>
+
+                        <h3>Principais acontecimentos</h3>
+                        <p>Durante o Império, o Brasil passou por grandes transformações:</p>
+                        <ul>
+                            <li>Consolidação da Independência e o Primeiro Reinado (1822–1831);</li>
+                            <li>O surgimento de movimentos sociais e políticos durante o Período Regencial (1831–1840);
+                            </li>
+                            <li>O Segundo Reinado, marcado pelo governo de Dom Pedro II (1840–1889);</li>
+                            <li>O fim da escravidão em 1888 durante o governo de Princesa Isabel;</li>
+                            <li>O crescimento da cultura, da vida urbana e dos debates políticos no país.</li>
+                        </ul>
+
+                        <img src="img/era-imperio.2.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
                         <div class="exemplo-visual">
-                            <p>O líder do Egito era o <span class="resultado-historia">Faraó</span>.</p>
+                            <p class="exemplo-titulo">Dom Pedro II:</p>
+                            <p>O imperador Dom Pedro II governou o Brasil por quase meio século, de 1840 a 1889. Esse
+                                longo período de governo é notável por trazer uma relativa estabilidade política ao
+                                país, especialmente após o conturbado Período Regencial, durante o seu reinado <span
+                                    class="resultado-historia">o Brasil viu o avanço da vida urbana, o florescimento
+                                    cultural (como a literatura romântica) e o intenso debate sobre a questão da
+                                    escravidão, que culminou na Lei Áurea em 1888.</span>.</p>
                         </div>
 
-                        <h3>Exemplo 2: O Rio Nilo</h3>
-                        <p>O Nilo era essencial, pois fornecia água para beber e irrigar as plantações, permitindo a vida no deserto.</p>
+                        <h3>Fim do Império</h3>
+                        <p>O Império terminou em 1889, quando o Marechal Deodoro da Fonseca proclamou a República. Dom
+                            Pedro II foi afastado do poder e viajou para a Europa. Apesar do fim da monarquia, o período
+                            imperial deixou importantes avanços políticos e culturais que ajudaram a formar o Brasil
+                            moderno.</p>
+
+                        <img src="img/era-imperio.3.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
                         <div class="exemplo-visual">
-                            <p>O rio mais importante era o <span class="resultado-historia">Nilo</span>.</p>
-                        </div>
-                        
-                        <h3>Exemplo 3: As Pirâmides</h3>
-                        <p>Eram grandes túmulos construídos para os faraós. Eram feitas de blocos enormes de pedra.</p>
-                        <div class="exemplo-visual">
-                            <p>As Pirâmides eram <span class="resultado-historia">Túmulos Reais</span>.</p>
+                            <p class="exemplo-titulo">Fato Curioso:</p>
+                            <p>O Imperador Dom Pedro II foi deposto de surpresa por um golpe militar em 15 de novembro
+                                de 1889: <span class="resultado-historia">Ele estava fora do Rio de Janeiro e não soube
+                                    imediatamente que o Brasil havia se tornado uma República, sendo informado e
+                                    obrigado a partir para a Europa horas depois</span>.</p>
                         </div>
 
-                        <h2 class="titulo-video-secundario integrado">🎥 Vídeo: A Vida no Egito Antigo:</h2>
+                        <h3>Curiosidade: O Brasil já teve uma família real morando aqui por mais de 60 anos!</h3>
+                        <p>A História da Família Real no Brasil Em 1808, o Brasil recebeu uma visita inesperada, a
+                            Família Real Portuguesa, fugindo das tropas de Napoleão Bonaparte, que invadiram Portugal. A
+                            fuga aconteceu em plena guerra, e mais de 10 mil pessoas atravessaram o Atlântico em dezenas
+                            de navios. Quando Dom João VI chegou ao Rio de Janeiro, o Brasil ainda era colônia de
+                            Portugal. Mas com a vinda da corte, tudo mudou: O Rio virou capital do Império Português;
+                            Foram criadas escolas, bibliotecas, o Banco do Brasil e a Imprensa Régia; A cidade passou a
+                            ter novos costumes e infraestrutura. Em 1821, Dom João VI voltou para Portugal, deixando seu
+                            filho Dom Pedro I no comando. Um ano depois, em 1822, Dom Pedro proclamou a Independência do
+                            Brasil e se tornou o primeiro imperador brasileiro. A monarquia durou até 1889, quando a
+                            República foi proclamada. Nesse tempo, o Brasil teve dois imperadores: Dom Pedro I
+                            (1822–1831) Dom Pedro II (1840–1889) Assim, a Família Real viveu no Brasil por mais de 60
+                            anos, deixando marcas profundas na nossa cultura, política e história.</p>
+
+                        <img src="img/era-imperio.4.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <div class="exemplo-visual">
+                            <p class="exemplo-titulo">Família Real</p>
+                            <p>A fuga da Família Real de Portugal em 1808 foi tão apressada e caótica que muitos membros
+                                da corte, incluindo a Princesa Carlota Joaquina, chegaram ao <span
+                                    class="resultado-historia">Brasil infestados de piolhos devido à falta de higiene e
+                                    às péssimas condições da viagem no navio</span>.</p>
+                        </div>
+
+                        <h2 class="titulo-video-secundario integrado">🎥 Vídeo: A Era do Imperio:</h2>
 
                         <div class="bloco-redirecionamento-video">
-                            <a 
-                                href="https://www.youtube.com/watch?v=pFTgWgb5wiM&t=59s" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                class="botao-video-youtube"
-                            >
+                            <a href="https://www.youtube.com/watch?v=eERlMeLvQlI" target="_blank"
+                                rel="noopener noreferrer" class="botao-video-youtube">
                                 ▶️ Assista à Explicação no YouTube
                             </a>
                         </div>
 
-                        <a href="#" class="botao-acao-licao">Visita Virtual às Pirâmides</a>
+                        <a data-target="republica-diasatuais" class="botao-acao-licao proximo-modulo btn-proximo-modulo">Próximo
+                            Módulo (2 de 4) →</a>
                     </div>
                 </div>
 
-                <div id="local-conteudo" class="conteudo-operacao-bloco oculto">
+                <div id="republica-diasatuais" class="conteudo-operacao-bloco oculto">
                     <header class="cabecalho-licao historia-header-interno">
-                        <h1>Módulo 4: A História da Minha Cidade</h1>
-                        <p class="objetivo-licao">🎯 Objetivo: Conhecer quem fundou o seu município e como ele era no passado.</p>
+
+                        <h1>Módulo 3: A República e os Dias Atuais</h1>
+                        <p class="objetivo-licao">🎯 Objetivo: Entender o início da República no Brasil e como ela
+                            transformou o modo de governo do país, substituindo a monarquia por presidentes eleitos.</p>
                     </header>
-                    
+
                     <div class="bloco-texto conteudo-integrado">
-                        <h2>Quem Viveu Aqui Antes?</h2>
-                        <p>Toda cidade, bairro e rua tem uma história! Ela foi fundada por pessoas que decidiram se estabelecer ali.</p>
-                        
-                        <h3>Exemplo 1: Nome da Rua</h3>
-                        <p>Muitas ruas recebem nomes de pessoas importantes, datas históricas ou árvores que existiam ali.</p>
+
+                        <h2>Olá, exploradores da história!</h2>
+                        <p>Deixamos para trás as coroas e os imperadores. Hoje, nossa viagem nos leva a um marco
+                            emocionante: o início da República no Brasil!</p>
+
+                        <img src="img/republica-diasatuais.1.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <h2>Início da República (1889 – Primeira República)</h2>
+                        <p>Com a Proclamação da República, em 1889, o país passou a ser governado por presidentes. Desde
+                            então, muita coisa mudou!
+                            A República foi proclamada em 15 de novembro de 1889 pelo Marechal Deodoro da Fonseca,
+                            encerrando o período imperial. O novo regime trouxe o fim da monarquia e da figura do
+                            imperador, substituindo-a por um governo chefiado por presidentes eleitos (ao menos em
+                            teoria). Os primeiros anos foram marcados por instabilidade política, disputas entre
+                            militares e civis e o predomínio das oligarquias rurais (principalmente São Paulo e Minas
+                            Gerais, a chamada Política do Café com Leite). Apesar das limitações democráticas, foi um
+                            período de formação das instituições republicanas e de modernização gradual do país.</p>
+
+                        <img src="img/republica-diasatuais.2.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <h3>República Moderna e as Transformações Sociais</h3>
+                        <p>Ao longo do século XX, o Brasil viveu diversos modelos de governo republicano, da ditadura de
+                            Vargas (Estado Novo) à redemocratização de 1945, passando pelo regime militar (1964–1985).
+                            Cada fase trouxe mudanças profundas:</p>
+                        <ul>
+                            <li>A industrialização e urbanização alteraram a economia e o modo de vida da população.
+                            </li>
+                            <li>O sufrágio universal se consolidou, garantindo o voto para todos os cidadãos adultos.
+                            </li>
+                            <li>A Constituição de 1988, após o fim da ditadura militar, estabeleceu as bases do Estado
+                                Democrático de Direito, assegurando liberdade, direitos civis e sociais.</li>
+                        </ul>
+
+                        <img src="img/republica-diasatuais.3.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
                         <div class="exemplo-visual">
-                            <p>Nomes de ruas são <span class="resultado-historia">Homenagens</span>.</p>
+                            <p class="exemplo-titulo">Transformação Social:</p>
+                            <p>Uma das maiores e mais rápidas transformações sociais do Brasil moderno foi a migração
+                                massiva do campo para a cidade: <span class="resultado-historia">Em poucas décadas
+                                    (entre 1940 e 1970), o país deixou de ser majoritariamente rural para se tornar
+                                    predominantemente urbano devido à industrialização e ao êxodo rural</span>.</p>
                         </div>
 
-                        <h3>Exemplo 2: O Prédio Mais Antigo</h3>
-                        <p>Prédios antigos, como igrejas ou praças centrais, são testemunhas do passado da sua região.</p>
+                        <h3>A República nos Dias Atuais</h3>
+                        <p>Hoje, o Brasil continua sendo uma República Federativa Presidencialista, com três poderes
+                            independentes (Executivo, Legislativo e Judiciário). O país enfrenta desafios como
+                            desigualdade social, corrupção e polarização política, mas também avança em direitos
+                            sociais, inclusão e participação cidadã. A sociedade brasileira, mais conectada e informada,
+                            tem papel cada vez mais ativo na cobrança por transparência, ética e representatividade.
+                            Assim, a República, iniciada há mais de um século, segue em constante transformação,
+                            refletindo o desenvolvimento e as contradições do Brasil moderno.</p>
+
+                        <img src="img/republica-diasatuais.4.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
                         <div class="exemplo-visual">
-                            <p>Um museu é um <span class="resultado-historia">Guardião da História</span>.</p>
-                        </div>
-                        
-                        <h3>Exemplo 3: Mudanças da Paisagem</h3>
-                        <p>Fotos antigas mostram como sua rua ou seu bairro mudaram com o tempo: onde havia um campo, hoje pode haver um prédio.</p>
-                        <div class="exemplo-visual">
-                            <p>Fotos antigas são <span class="resultado-historia">Fontes Visuais</span> da História.</p>
+                            <p class="exemplo-titulo">Voto Feminino:</p>
+                            <p>Embora a República tenha sido proclamada em 1889, as mulheres brasileiras só conquistaram
+                                o direito de votar em 1932, durante o governo de Getúlio Vargas, <span
+                                    class="resultado-historia">após mais de 40 anos de exclusão e intensa luta por parte
+                                    de ativistas</span>.</p>
                         </div>
 
-                        <h2 class="titulo-video-secundario integrado">🎥 Vídeo: Entendendo a História do Bairro:</h2>
+                        <h3>Curiosidade: A bandeira do Brasil foi inspirada na antiga bandeira imperial.</h3>
+                        <p>A bandeira do Brasil realmente foi inspirada na antiga bandeira do Império, criada em 1822,
+                            quando Dom Pedro I proclamou a Independência. A bandeira imperial tinha fundo verde,
+                            representando a Casa de Bragança (família de Dom Pedro I), e um losango amarelo, em
+                            referência à Casa de Habsburgo (família da imperatriz Leopoldina). No centro havia o brasão
+                            imperial, com a coroa, o Cruzeiro do Sul e ramos de café e tabaco, símbolos da riqueza do
+                            país na época. Quando o Brasil se tornou uma república, em 1889, decidiu-se manter as cores
+                            verde e amarela como homenagem à história e à unidade nacional. No entanto, o brasão
+                            imperial foi substituído por um círculo azul com estrelas representando os estados
+                            brasileiros e a inscrição “Ordem e Progresso”, inspirada nos ideais positivistas. Assim, a
+                            atual bandeira republicana manteve o formato e as cores do Império, mas com novos símbolos
+                            que representavam o novo regime e o futuro do país.</p>
+
+                        <img src="img/republica-diasatuais.5.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <div class="exemplo-visual">
+                            <p class="exemplo-titulo">Ordem e Progresso:</p>
+                            <p>A famosa frase "Ordem e Progresso" na bandeira brasileira não é apenas um desejo, mas uma
+                                adaptação direta do lema da filosofia Positivista (criada por Auguste Comte), <span
+                                    class="resultado-historia">que valorizava a ciência e a razão como caminhos para o
+                                    desenvolvimento da nação</span>.</p>
+                        </div>
+
+                        <h2 class="titulo-video-secundario integrado">🎥 Vídeo: A Proclamação da Republica:</h2>
 
                         <div class="bloco-redirecionamento-video">
-                            <a 
-                                href="https://www.youtube.com/watch?v=pFTgWgb5wiM&t=59s" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                class="botao-video-youtube"
-                            >
+                            <a href="https://www.youtube.com/watch?v=y1Sl8yV3sPk" target="_blank"
+                                rel="noopener noreferrer" class="botao-video-youtube">
                                 ▶️ Assista à Explicação no YouTube
                             </a>
                         </div>
 
-                        <a href="#" class="botao-acao-licao">Explore a História Local</a>
+                        <a data-target="brasil-contemporaneo" class="botao-acao-licao proximo-modulo btn-proximo-modulo">Próximo
+                            Módulo (3 de 4) →</a>
                     </div>
                 </div>
-                
+
+                <div id="brasil-contemporaneo" class="conteudo-operacao-bloco oculto">
+                    <header class="cabecalho-licao historia-header-interno">
+                        <h1>Módulo 4: Brasil Contemporâneo e Sociedade Atual</h1>
+                        <p class="objetivo-licao">🎯 Objetivo: Compreender como o Brasil evoluiu após a Proclamação da
+                            República e identificar as principais características da sociedade brasileira atual.</p>
+                    </header>
+
+                    <div class="bloco-texto conteudo-integrado">
+
+                        <h2>Brasil Contemporâneo – Onde a História Encontra o Agora! 🌎</h2>
+                        <p>Parabéns por chegarmos ao último e mais relevante capítulo de nossa aventura histórica!
+                            Deixamos o Império e a Velha República para trás. Agora, vamos desembarcar no Brasil que nós
+                            vivemos, no Brasil de hoje!</p>
+
+                        <img src="img/brasil-contemporaneo.1.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+
+                        <h2>Transformações Sociais e Tecnológicas no Brasil</h2>
+                        <p>Desde o final do século XX, o Brasil passou por diversas mudanças que transformaram o modo de
+                            viver da população.
+                            A chegada da tecnologia, como computadores, celulares e internet, aproximou pessoas e
+                            facilitou a comunicação.
+                            A vida urbana cresceu rapidamente, com mais pessoas vivendo nas cidades em busca de
+                            trabalho, estudo e oportunidades.
+                            Essas transformações também mudaram o comportamento das pessoas, que passaram a usar
+                            tecnologia na escola, no trabalho e até no lazer.
+                            Hoje, o Brasil é um dos países mais conectados do mundo.</p>
+
+                        <img src="img/brasil-contemporaneo.3.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <h3>Economia, Urbanização e Cultura na Atualidade</h3>
+                        <p>Nas últimas décadas, o Brasil se tornou um país com economia diversificada:
+                            agricultura, indústria, comércio e serviços.
+                            A urbanização acelerada fez surgir cidades maiores, com novos prédios, comércios e meios de
+                            transporte.
+                            Apesar de desafios como desigualdade social, muitas melhorias foram conquistadas, como maior
+                            acesso à educação, saúde e cultura.
+                            A cultura brasileira também se fortaleceu: música, festas, culinária, esportes e tradições
+                            regionais ganharam destaque dentro e fora do país.
+                            O Brasil é reconhecido pela sua diversidade cultural e criatividade.</p>
+
+                        <img src="img/brasil-contemporaneo.4.jpg" alt="" class="img">
+                        <style>
+                            .img {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                margin: 0 auto;
+                                /* centraliza */
+                            }
+                        </style>
+
+                        <div class="exemplo-visual">
+                            <p class="exemplo-titulo">Cultura e Economia:</p>
+                            <p>A Economia Criativa (música, arte, design, moda) do Brasil gera um PIB maior do que
+                                setores tradicionais, como a indústria automobilística, <span
+                                    class="resultado-historia">isso mostra que a diversidade cultural e a criatividade
+                                    brasileira são um motor econômico poderoso e em crescimento</span>.</p>
+                        </div>
+
+                        <h3>Desafios e Caminhos do Brasil Hoje</h3>
+                        <p>Mesmo com avanços importantes, o Brasil enfrenta desafios que ainda fazem parte do cotidiano
+                            da população:</p>
+                        <ul>
+                            <li>desigualdade social</li>
+                            <li>dificuldades na educação</li>
+                            <li>questões ambientais</li>
+                            <li>necessidade de maior segurança</li>
+                            <li>debates políticos intensos</li>
+                        </ul>
+                        <p>Por outro lado, o país também avança:</p>
+                        <ul>
+                            <li>jovens mais participativos e conectados</li>
+                            <li>projetos de sustentabilidade</li>
+                            <li>expansão de tecnologias</li>
+                            <li>inclusão social e cultural</li>
+                        </ul>
+                        <p>O Brasil contemporâneo é resultado de sua história, do descobrimento, do Império, da
+                            República — e continua em constante transformação.</p>
+
+
+                        <div class="exemplo-visual">
+                            <p class="exemplo-titulo">Sustentabilidade vs. Desafio:</p>
+                            <p>O Brasil tem uma das matrizes elétricas mais limpas do mundo, com mais de 80% da
+                                eletricidade vinda de fontes renováveis (hídrica, eólica, solar): <span
+                                    class="resultado-historia">Este é um grande avanço global em sustentabilidade que
+                                    coexiste com os grandes desafios ambientais do país (como o desmatamento)</span>.
+                            </p>
+                        </div>
+
+                        <h2 class="titulo-video-secundario integrado">🎥 Vídeo: A Primeira República do Brasil
+                            (República Velha):</h2>
+
+                        <div class="bloco-redirecionamento-video">
+                            <a href="https://www.youtube.com/watch?v=q1knhnv_1pY" target="_blank"
+                                rel="noopener noreferrer" class="botao-video-youtube">
+                                ▶️ Assista à Explicação no YouTube
+                            </a>
+                        </div>
+                        <h2 class="titulo-video-secundario integrado" style="margin-top: 40px;">🎉 PARABÉNS! MÓDULO
+                            FINALIZADO! 🎉</h2>
+
+                        <div
+                            style="text-align: center; margin-top: 30px; padding: 20px; border: 3px solid var(--verde-limao); border-radius: 10px;">
+                            <p style="font-size: 1.2em; font-weight: 700; color: var(--azul-turquesa);">Você completou a
+                                Aventura de História! Que conquista incrível!</p>
+
+                            <a href="cursos.html" class="botao-acao-licao"
+                                style="background-color: var(--laranja-vibrante); margin-top: 15px;">Ver Mais Cursos e
+                                Aventuras →</a>
+                        </div>
+                    </div>
+
             </section>
         </div>
     </main>
@@ -258,7 +629,7 @@
             document.querySelector('.navegacao').classList.toggle('aberto');
         });
 
-        // LÓGICA DE TROCA DE CONTEÚDO
+        // LÓGICA DE TROCA DE CONTEÚDO (Menu Lateral)
         const botoesModulo = document.querySelectorAll('.modulo-fixo a');
         const blocosConteudo = document.querySelectorAll('.conteudo-operacao-bloco');
         const listaModulos = document.querySelectorAll('.modulo-fixo');
@@ -284,11 +655,37 @@
                 // 3. Atualiza o estado "ativo" do menu lateral
                 listaModulos.forEach(li => li.classList.remove('atual'));
                 botao.parentElement.classList.add('atual');
-                
+
                 document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // LÓGICA DO BOTÃO "PRÓXIMO MÓDULO" (Bottom)
+        const botoesProximo = document.querySelectorAll('.btn-proximo-modulo');
+
+        botoesProximo.forEach(botaoProximo => {
+            botaoProximo.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('data-target');
+
+                // Encontra o link do menu lateral que corresponde ao alvo
+                const linkAlvo = document.querySelector(`.modulos-navegacao-fixa a[data-target="${targetId}"]`);
+
+                if (linkAlvo) {
+                    // Simula um clique no link do menu lateral para executar a lógica de troca
+                    linkAlvo.click();
+                } else {
+                    // Se não houver próximo módulo, ele apenas rola para o topo da seção final (Módulo 3)
+                    const secaoFinal = document.getElementById('marcosdomundo'); 
+                    if (secaoFinal) {
+                        secaoFinal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
             });
         });
     </script>
 
 </body>
+
 </html>

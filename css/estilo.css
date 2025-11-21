@@ -220,6 +220,107 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
+/* ================================== */
+/* NOVOS ESTILOS PARA INDEX.HTML */
+/* ================================== */
+
+/* 1. SEÇÃO DE FEEDBACKS */
+.feedbacks {
+    padding: 50px 5%;
+    text-align: center;
+    background-color: #E0F7FA; /* Um azul claro suave, para destacar da seção de destaques */
+}
+
+.feedbacks h3 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: var(--laranja-vibrante);
+}
+
+.container-feedbacks {
+    justify-content: center;
+}
+
+.card-feedback {
+    background-color: var(--texto-contraste);
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%; /* Três colunas */
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid var(--azul-turquesa);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card-feedback:hover {
+    transform: translateY(-5px);
+}
+
+.depoimento {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: var(--texto-principal);
+}
+
+.autor {
+    font-weight: 700;
+    color: var(--azul-turquesa);
+    font-size: 0.9em;
+}
+
+/* 2. SEÇÃO DE CTA FINAL (MATRÍCULA) */
+.cta-matricula {
+    background-color: var(--verde-limao);
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.cta-conteudo-final h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: var(--texto-principal);
+}
+
+.cta-conteudo-final p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color: var(--texto-principal);
+    opacity: 0.9;
+}
+
+.botao-cta-final {
+    display: inline-block;
+    background-color: var(--laranja-vibrante);
+    color: var(--texto-contraste) !important;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 900;
+    padding: 15px 40px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.botao-cta-final:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE PARA FEEDBACKS */
+@media (max-width: 900px) {
+    .container-feedbacks {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card-feedback {
+        width: 100%;
+    }
+    .cta-conteudo-final h3 {
+        font-size: 2em;
+    }
+}
+
 /* RODAPÉ */
 .rodape {
     background-color: var(--texto-principal);
