@@ -15,7 +15,7 @@ O objetivo foi criar um portal educacional interativo voltado para o público in
 
 Este trabalho foi realizado em grupo, com a seguinte divisão de tarefas:
 
-* **[Luane]:** Desenvolvimento do esqueleto do site (Estrutura HTML, Layout CSS e Lógica JS).
+* **Luane:** Desenvolvimento do esqueleto do site (Estrutura HTML, Layout CSS e Lógica JS).
 * **Guilherme:** Elaboração e curadoria dos conteúdos didáticos.
 * **Paulo:** Elaboração e curadoria dos conteúdos didáticos.
 * **Jessica:** Elaboração e curadoria dos conteúdos didáticos.
