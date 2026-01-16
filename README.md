@@ -1,4 +1,4 @@
-# 📚 [Nome do Projeto] - Site Educacional Infantil
+# 📚 [Aventura do Saber] - Site Educacional Infantil
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Concluído-green)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
